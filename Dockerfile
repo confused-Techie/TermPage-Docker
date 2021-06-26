@@ -10,9 +10,9 @@ CMD echo 'Setting up Webpage'
 RUN mkdir /var/www/termpage
 RUN git clone https://github.com/confused-Techie/TermPage-Docker
 CMD cp -r . /var/www/termpage/
-RUN cd /etc/apache2/sites-available
-RUN cp 000-default.conf termpage.conf
+RUN cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/termpage.conf
 RUN a2ensite termpage.conf
 RUN a2dissite 000-default.conf
-RUN systemctl reload apache2
+CMD ./apache_wrapper.sh
 EXPOSE 80
+VOLUME ["/var/www/termpage"]
