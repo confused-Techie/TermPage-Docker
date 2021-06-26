@@ -15,4 +15,4 @@ while sleep 60; do
     echo "The startup process has already exited."
     exit 1
   fi
-done 
+done
