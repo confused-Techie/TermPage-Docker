@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/sbin/apachectl start
+/usr/sbin/apachectl -D FOREGROUND
