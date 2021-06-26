@@ -1,5 +1,5 @@
-var scList = ["stream", "dev", "web", "bill", "manage", "extensions"];
-var scListD = ["Streaming Sites", "Developer Sites", "Web Managment", "Paying Bills", "Online Account Managment", "Extension Developer"];
+var scList = ["stream", "dev", "web", "manage", "extensions"];
+var scListD = ["Streaming Sites", "Developer Sites", "Web Managment", "Online Account Managment", "Extension Developer"];
 
 var userNameV = "User";
 var hostNameV = "Chrome";
@@ -12,7 +12,6 @@ const shortcut = {
   "stream_sc" : [ ["Hulu", "https://www.hulu.com/hub/home"], ["Crunchyroll", "https://www.crunchyroll.com/"], ["Disney+", "https://www.disneyplus.com/"], ["Netflix", "https://www.netflix.com/"]],
   "dev_sc" : [ ["Github", "https://github.com/"], ["Microsoft Partner Center", "https://partner.microsoft.com/en-us/dashboard"], ["Philips Hue Developer", "https://developers.meethue.com/"], ["Docker Hub", "https://hub.docker.com/u/lhbasics"]],
   "web_sc" : [ ["Cloudflare", "https://dash.cloudflare.com/"], ["Google Domains", "https://domains.google.com/"], [ "Google Search Console", "https://search.google.com/search-console?"]],
-  "bill_sc" : [ ["Capital One", "https://myaccounts.capitalone.com/accountSummary"], ["USAA", "https://www.usaa.com/inet/gas_pc/PcAutoBillView"], ["Santander", "https://myaccount.santanderconsumerusa.com/Account/AccountSummary"], ["Chase", "https://www.chase.com/"], ["Storage Unit", "https://www.storagedirect.com/my-account/"]],
   "manage_sc" : [ ["Google Account", "https://myaccount.google.com/"], ["Microsoft Account", "https://account.microsoft.com/"], ["Samsung Account", "https://account.samsung.com/membership/contents/main"]],
   "extensions_sc" : [ ["Google Chrome", "https://chrome.google.com/webstore/devconsole"], ["Firefox", "https://addons.mozilla.org/en-US/developers/"], ["Opera", "https://addons.opera.com/developer/"], ["Edge", "https://partner.microsoft.com/en-us/dashboard/microsoftedge/overview"]]
 };
