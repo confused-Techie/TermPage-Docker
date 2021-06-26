@@ -15,6 +15,6 @@ RUN cp -r TermPage-Docker/* /var/www/termpage/
 RUN a2ensite termpage.conf
 RUN a2dissite 000-default.conf
 RUN chmod 0755 ./TermPage-Docker/apache_wrapper.sh
-CMD ["bash", "./TermPage-Docker/apache_wrapper.sh"]
+CMD ["bash", "./TermPage-Docker/apache_startup.sh"]
 EXPOSE 80
 VOLUME ["/var/www/termpage"]
