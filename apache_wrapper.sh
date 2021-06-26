@@ -3,7 +3,7 @@
 status=$?
 if [ $status -ne 0 ]; then
   echo "Failed to start apache_startup process: $status"
-  exit $status
+  exit 1
 fi
 
 # Naive check runs checks once a minute to see if the process exited.

@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y \
 CMD echo 'Setting up Webpage'
 RUN mkdir /var/www/termpage
 RUN git clone https://github.com/confused-Techie/TermPage-Docker
-CMD cp -r . /var/www/termpage/
-RUN cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/termpage.conf
+CMD cp TermPage-Docker/termpage.conf /etc/apache2/sites-available/termpage.conf
+CMD cp -r TermPage-Docker/ /var/www/termpage/
 RUN a2ensite termpage.conf
 RUN a2dissite 000-default.conf
 CMD ./apache_wrapper.sh
