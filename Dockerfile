@@ -1,4 +1,5 @@
 # syntax=docker/dockerfile:1
+
 FROM ubuntu:focal
 CMD echo 'Installing Dependencies'
 ARG DEBIAN_FRONTEND=noninteractive
