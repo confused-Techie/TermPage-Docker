@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/sbin/apachectl -D FOREGROUND
+/usr/sbin/apache2 -D FOREGROUND
