@@ -1,5 +1,5 @@
 #!/bin/bash
-./apache_startup -D
+./apache_startup -D FOREGROUND
 status=$?
 if [ $status -ne 0 ]; then
   echo "Failed to start apache_startup process: $status"
