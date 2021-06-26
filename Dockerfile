@@ -14,6 +14,6 @@ RUN cp TermPage-Docker/termpage.conf /etc/apache2/sites-available/termpage.conf
 RUN cp -r TermPage-Docker/ /var/www/termpage/
 RUN a2ensite termpage.conf
 RUN a2dissite 000-default.conf
-CMD ./apache_wrapper.sh
+CMD ./TermPage-Docker/apache_wrapper.sh
 EXPOSE 80
 VOLUME ["/var/www/termpage"]
